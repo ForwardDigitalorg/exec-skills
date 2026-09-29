@@ -124,7 +124,7 @@ something while wording it like a status update, which buries the ask
 under a tone that reads as "for your information" rather than "I need
 this from you." When in doubt, ask: does the reader need to do anything
 after reading this? If yes, it's an Ask, and both the subject and the
-Launch (see below) should read that way.
+Launch should read that way.
 
 - **Action Ask examples:** `Request: sign-off on Q3 budget`, `Feedback
   Requested: [topic]`, `Meeting Request: [topic]`.
