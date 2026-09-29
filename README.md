@@ -21,7 +21,7 @@ Neither skill sends or publishes anything. You stay in control of what goes out.
 
 Drafts new emails from scratch. It will not send or publish anything. It uses executive communication right practices to draft an email for you to review.
 
-It starts by asking why you're sending the email, since that shapes both the subject line and the opening ask. It pulls facts from anything you upload (a meeting transcript, Jira tickets, a prior thread) and asks only for what's still missing: who it's to, the outcome you want, any deadlines, and who to cc. It matches your voice using your my-writing-style profile, or offers to build one from a few of your own emails (see "Your writing voice" below).
+It starts by asking why you're sending the email, since that shapes both the subject line and the opening ask. It pulls facts from anything you upload (a meeting transcript, JIRA tickets, a prior thread) and asks only for what's still missing: who it's to, the outcome you want, any deadlines, and who to cc. It matches your voice using your my-writing-style profile, or offers to build one from a few of your own emails (see "Your writing voice" below).
 
 After your signature, it adds a closing line: *"Content drafted by AI for efficiency, quality checked by me."* This is there for full transparency. Keep or discard it at your discretion.
 
