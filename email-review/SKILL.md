@@ -81,18 +81,16 @@ finding a version that's just as clear about what's being asked but still
 sounds like the writer ("Download it, play around with it, let me know
 what you think" asks for exactly the same three things without the
 clipped, list-like phrasing). Flag a Launch that's technically clear but
-tonally cold, the fix usually isn't to add hedging language back in (that
-undoes Step 4 above), it's to write the same instruction the way the
+tonally cold, the fix usually isn't to add hedging language back in (that undoes the work we just did), it's to write the same instruction the way the
 writer would actually say it out loud to that person.
 
 **Subject line, only when it's a reply.** For a new email, subject lines
-are proposed directly since there's no existing one to weigh against (see
-below). For a reply, don't suggest changing it by default, changing a
-thread's subject makes it harder to find and follow. Only flag it if the
-thread has drifted onto a different topic than the subject still describes,
-the ask has changed since the subject was written, or a reader skimming
-their inbox would have trouble telling this reply apart from others in the
-same thread.
+are proposed directly since there's no existing one to weigh against. For a reply, 
+don't suggest changing it by default, changing a thread's subject makes it 
+harder to find and follow. Only flag it if the thread has drifted onto a 
+different topic than the subject still describes, the ask has changed since 
+the subject was written, or a reader skimming their inbox would have trouble 
+telling this reply apart from others in the same thread.
 
 **Weak scannability.** Long paragraphs doing more than one job, a list of
 options or open questions written as one dense paragraph instead of
