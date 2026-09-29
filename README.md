@@ -1,6 +1,6 @@
-Exec Comms Skills
+Exec Skills
 
-A collection of Claude Skills for executive communication. Currently just email, more may be added later.
+A collection of Claude Skills for executive project management and communication. Currently just email, more may be added later.
 
 What's a skill?
 
