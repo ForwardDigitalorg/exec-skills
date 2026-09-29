@@ -5,7 +5,7 @@ description: Draft a brand-new email from scratch using PULSE's "Anatomy of an A
 
 # Email Draft
 
-This skill writes new emails. Its sister skill, **email-review**, marks up
+This skill drafts new emails. Its sister skill, **email-review**, marks up
 emails someone has already written. Both use the same two frameworks:
 
 - **Alignment and Attunement** (Margaret Keys, Executive Communications).
