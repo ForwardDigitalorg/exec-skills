@@ -68,8 +68,8 @@ tighter version.
 single most important sentence: the decision, the recommendation, the
 direct ask, or the one fact that changes what the reader does next. If it's
 missing or buried several paragraphs in, flag where it currently sits and
-suggest what the Launch line could be, stated up front, in its own short
-paragraph.
+suggest what the Launch line could be, stated up front, in its own single sentence
+or short paragraph in italics.
 
 Being concrete about the ask and being warm about it are not in tension,
 and it's easy to overcorrect a vague Launch into one that reads as a
