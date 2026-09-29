@@ -92,6 +92,21 @@ different topic than the subject still describes, the ask has changed since
 the subject was written, or a reader skimming their inbox would have trouble 
 telling this reply apart from others in the same thread.
 
+Also flag a reply's subject when its **urgency or date is out of date**.
+The subject should match the current situation:
+
+- **No longer urgent:** suggest dropping URGENT and updating or removing
+  the date.
+- **Now urgent** (deadline less than 5 business days away): suggest adding
+  URGENT, e.g. `URGENT request: sign-off on Q3 budget - deadline 05-Oct`.
+- **Deadline has passed, but the discussion continues:** suggest a new
+  subject without the old date, e.g. `URGENT request: planning for Q3 -
+  deadline 05-Oct` becomes `Continued: Q3 planning discussion`. If a new
+  deadline is agreed, add it: `Continued: Q3 planning - deadline 20-Oct`.
+
+A subject with an expired date or a stale URGENT teaches readers to ignore
+both. Count business days from today's date; if you don't know it, ask.
+
 **Weak scannability.** Long paragraphs doing more than one job, a list of
 options or open questions written as one dense paragraph instead of
 bullets, no bold lead-ins to help a skimming reader find the part that
