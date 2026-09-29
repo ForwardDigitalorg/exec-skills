@@ -94,23 +94,33 @@ voice.
     with URGENT. `URGENT request: sign-off on Q3 budget - deadline 05-Oct`.
     Launch: *"Thanks in advance for reviewing and signing by 05-Oct. Let
     me know if you have any questions!"*
-  - **Deadline 5 or more business days away:** not URGENT.
-     For any Action Ask, open the Launch with "Thanks in advance for...":
-    *"Thanks in advance for reviewing the Q3 budget and signing off."
-    *Same style of Launch, with the date.
-  - Count business days from the day the email will be sent. URGENT only
-    means something if it's rare, so don't add it for any other reason.
+  - **Deadline 5 or more business days away:** no URGENT.
+    `Request: sign-off on Q3 budget - deadline 30-Oct`. Same style of
+    Launch, with the date.
+  - **Counting business days.** Count from today's date, or from the send
+    date if the author gives one. If you don't know today's date, ask.
+    Skip weekends. Count holidays only if the author mentions them.
+    Convert relative deadlines ("by Friday," "end of next week") into an
+    actual DD-MMM date first.
+  - **Show the count** under "Assumptions to check," e.g. *"Deadline
+    05-Oct is 4 business days from today (29-Sep), so URGENT."* The
+    author confirms it before sending.
+  - URGENT only means something if it's rare, so don't add it for any
+    other reason.
 - **Greeting.** Friendly and matched to the relationship.
 - **The Launch.** The single most important sentence, first, in its own
   sentence or short paragraph, in *italics*. Write it last, place it first:
   draft the body, then write the one line that says what you need, then move
   it to the top. Clear and warm are not in tension. Write the ask the way the
   author would say it out loud to this person, not as an instruction manual.
+  For an Action Ask, open the Launch with "Thanks in advance for...":
+  *"Thanks in advance for reviewing the Q3 budget and signing off."*
 - **Body.** Scannable: bullets for lists and options, bold lead-ins where a
   skimming reader needs to find their part, one job per paragraph. Include
   dates, owners, and what's blocked. Link to relevant work, but only to
   things the recipient can actually open.
-- **Sign-off.** Matched to the context and the relationship.
+- **Sign-off.** Matched to the context and the relationship. For an Action
+  Ask, close with "Thanks in advance," before the author's name.
 - **Timing.** If it matters (time zones, end of week, before a meeting),
   suggest when to send.
 
