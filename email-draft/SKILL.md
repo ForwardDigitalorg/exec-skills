@@ -1,6 +1,6 @@
 ---
 name: email-draft
-description: Draft a brand-new email from scratch using PULSE's "Anatomy of an Action-Based Email" and Margaret Keys' Alignment and Attunement framework. Starts by asking why the email is being sent, pulls facts from any context the author uploads (meeting transcripts, Jira tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's own voice from their my-writing-style profile (or builds one from writing samples), and returns a ready-to-send draft with an action subject line and an italicized Launch. Use whenever someone asks to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft the author already wrote, use email-review instead.
+description: Draft a brand-new email from scratch using PULSE's "Anatomy of an Action-Based Email" and Margaret Keys' Alignment and Attunement framework. Starts by asking why the email is being sent, pulls facts from any context the author uploads (meeting transcripts, JIRA tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's own voice from their my-writing-style profile (or builds one from writing samples), and returns a ready-to-send draft with an action subject line and an italicized Launch. Use whenever someone asks to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft the author already wrote, use email-review instead.
 ---
 
 # Email Draft
@@ -37,7 +37,7 @@ worded like updates are the most common way a request gets ignored.
 ## Step 2: Gather context before asking more questions
 
 Invite the author to upload or paste anything relevant: a meeting
-transcript, Jira tickets, the prior email thread, a doc, their own rough
+transcript, JIRA tickets, the prior email thread, a doc, their own rough
 notes. Pull out the facts: what was asked, by whom, on what date, what was
 agreed, what's still open.
 
