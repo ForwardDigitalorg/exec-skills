@@ -92,11 +92,12 @@ voice.
   places.
   - **Deadline less than 5 business days away:** also start the subject
     with URGENT. `URGENT request: sign-off on Q3 budget - deadline 05-Oct`.
-    Launch: *"Thanks for reviewing and signing by 05-Oct. Let me know if
-    you have any questions!"*
-  - **Deadline 5 or more business days away:** no URGENT.
-    `Request: sign-off on Q3 budget - deadline 30-Oct`. Same style of
-    Launch, with the date.
+    Launch: *"Thanks in advance for reviewing and signing by 05-Oct. Let
+    me know if you have any questions!"*
+  - **Deadline 5 or more business days away:** not URGENT.
+     For any Action Ask, open the Launch with "Thanks in advance for...":
+    *"Thanks in advance for reviewing the Q3 budget and signing off."
+    *Same style of Launch, with the date.
   - Count business days from the day the email will be sent. URGENT only
     means something if it's rare, so don't add it for any other reason.
 - **Greeting.** Friendly and matched to the relationship.
