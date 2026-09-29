@@ -49,7 +49,8 @@ answers.
   drives Attunement: how technical to be, how warm, how much background.
 - **What's the desired outcome?** What does "done" look like after they act?
 - **Is there a deadline?** By when, and what's driving that date? A deadline
-  with a reason gets met more often than a bare date.
+  with a reason gets met more often than a bare date. A deadline changes the
+  subject line and the Launch (see Step 3).
 - **Should anyone be cc'd?** For each person, ask why. PULSE's "specific
   recipients" step: everyone on the email should have a reason to be there.
 - **Email addresses.** Ask only if the author wants a draft created directly
@@ -85,6 +86,12 @@ voice.
   opening. Action Ask: `Request: [topic]`, `Decision Needed: [topic]`,
   `Feedback Requested: [topic]`. Action Taken: `Update: [topic]`,
   `FYI: [topic]`.
+- **Asks with a deadline.** If an Action Ask has a deadline, start the
+  subject with URGENT and end it with the date, in DD-MMM format:
+  `URGENT request: sign-off on Q3 budget - deadline 05-Oct`. The Launch
+  names the same date, framed as thanks rather than pressure:
+  *"Thanks for reviewing and signing by 05-Oct. Let me know if you have any
+  questions!"* Use the identical date in both places.
 - **Greeting.** Friendly and matched to the relationship.
 - **The Launch.** The single most important sentence, first, in its own
   sentence or short paragraph, in *italics*. Write it last, place it first:
