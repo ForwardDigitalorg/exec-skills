@@ -86,12 +86,19 @@ voice.
   opening. Action Ask: `Request: [topic]`, `Decision Needed: [topic]`,
   `Feedback Requested: [topic]`. Action Taken: `Update: [topic]`,
   `FYI: [topic]`.
-- **Asks with a deadline.** If an Action Ask has a deadline, start the
-  subject with URGENT and end it with the date, in DD-MMM format:
-  `URGENT request: sign-off on Q3 budget - deadline 05-Oct`. The Launch
-  names the same date, framed as thanks rather than pressure:
-  *"Thanks for reviewing and signing by 05-Oct. Let me know if you have any
-  questions!"* Use the identical date in both places.
+- **Asks with a deadline.** If an Action Ask has a deadline, end the subject
+  with the date, in DD-MMM format, and name the same date in the Launch,
+  framed as thanks rather than pressure. Use the identical date in both
+  places.
+  - **Deadline less than 5 business days away:** also start the subject
+    with URGENT. `URGENT request: sign-off on Q3 budget - deadline 05-Oct`.
+    Launch: *"Thanks for reviewing and signing by 05-Oct. Let me know if
+    you have any questions!"*
+  - **Deadline 5 or more business days away:** no URGENT.
+    `Request: sign-off on Q3 budget - deadline 30-Oct`. Same style of
+    Launch, with the date.
+  - Count business days from the day the email will be sent. URGENT only
+    means something if it's rare, so don't add it for any other reason.
 - **Greeting.** Friendly and matched to the relationship.
 - **The Launch.** The single most important sentence, first, in its own
   sentence or short paragraph, in *italics*. Write it last, place it first:
