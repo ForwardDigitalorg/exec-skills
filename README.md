@@ -1,6 +1,6 @@
 # Exec Skills
 
-A collection of Claude Skills for executive project management and communication. Right now it has two email skills (one for drafting new emails, one for reviewing drafts), a skill for capturing meetings, and the design for a team leadership tool. More may be added later.
+A collection of Claude Skills for executive project management and communication. Right now it has two email skills (one for drafting new emails, one for reviewing drafts), a skill for capturing meetings, a daily summary skill, and the design for a team leadership tool. More may be added later.
 
 ## What's a skill?
 
@@ -15,6 +15,7 @@ Each skill lives in its own folder in this repo, and every skill's main file is 
 | `email-draft/` | You need to draft a **new** email | Drafts it from scratch for you to review |
 | `email-review/` | You've **already written** a draft | Marks it up with suggestions, never rewrites it |
 | `meeting-notes-capture/` | A meeting had **no AI note-taker** | Turns your notes or transcript into a clear record of requests, decisions, dates, and next steps |
+| `daily-summary/` | It's the **end of your workday** | Drafts your daily update from today's meetings, email, calendar, and task tracker, and asks only what's missing |
 
 None of these skills sends, publishes, or saves anything without your approval. You stay in control of what goes out.
 
@@ -44,9 +45,17 @@ Captures what mattered in a meeting that had no AI note-taker: a client's own vi
 
 It pulls out the key points, asks only about what's missing or unclear, and shows you the record to approve, with what needs action first. Then it gives you two ready-to-paste versions: facts only for the ticket in your task tracker, and the full record, including private notes, for your team wiki. It never invents names, dates, or promises. Tip: block 10 minutes after meetings with no note-taker and use it while details are fresh.
 
+### daily-summary/
+
+Writes your end-of-day update for you, from what actually happened today. Start it by saying "run my daily summary," then walk away for a few minutes. Claude reads today's meeting notes, email (inbox and sent), calendar, and task tracker. It starts with yesterday's open blockers: if no one has asked for what you're waiting on, it tells you and drafts the request.
+
+You come back to a draft summary with only the missing questions at the top. The summary puts what needs action first (decisions needed, who you're waiting on, dates that changed) and what's settled last (decisions made, work finished). Answer the questions, say "good," and it posts the summary to your team's agreed location. It shows you any ticket changes before making them, and private notes never go into tickets. Your part takes about 3 minutes.
+
+On the first run, it checks your connections and offers a workday reminder around 5 pm your time, so you don't have to remember. A test mode shows what would be posted without posting anything.
+
 ### team-radar/ (design)
 
-The design for a team leadership tool, for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses email-draft for follow-ups and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
+The design for a team leadership tool, for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses daily-summary for the daily run, email-draft for follow-ups, and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
 
 ## The frameworks behind the email skills
 
