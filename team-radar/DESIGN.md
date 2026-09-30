@@ -4,7 +4,7 @@ A tool for leaders who manage a team that delivers work for others. It works for
 
 It tracks every request from the day it is made. It finds late work and silence early. It drafts the follow-up emails. It gives the leader one page that shows what needs them. Each team can give its own version a name.
 
-**Status:** v1.0, 2026-09-29. Reviewed by the owner. Only meeting-notes-capture is built so far.
+**Status:** v1.1, 2026-09-29. Reviewed by the owner. Built so far: meeting-notes-capture and daily-summary.
 **Owner:** Kelly Wortham
 
 **Words used in this document:**
@@ -122,12 +122,13 @@ If a ticket already exists for the request, Claude links to it. It does not crea
 
 ## 6. When it runs
 
-**Every day, at the end of each person's own workday. Claude does the work. The person needs about 3 minutes.**
+**Every day, at the end of each person's own workday. The person starts it and walks away. Claude does the work. The person needs about 3 minutes.**
 
-Many teams work in different time zones, so there may be no shared "end of day." Each person starts the tool when their own workday ends. Or it runs on a schedule set to their time zone. Claude does steps 1 to 4. The person only does steps 5 to 7.
+The daily run is the **daily-summary** skill ([section 10](#10-other-skills-it-uses)). Many teams work in different time zones, so there may be no shared "end of day." Each person starts it when their own workday ends, by saying something like "run my daily summary." An optional **reminder around 5 pm local time** (a push notification on workdays) tells them when to start it. Then they can step away while Claude works. Claude does steps 1 to 4. The person only does steps 5 to 7.
 
 **What Claude does (automatic):**
 
+0. **Checks yesterday's open blockers first.** If no one asked the other person to clear a blocker, Claude says so at the top and drafts the request ([When no one on the team has acted](#when-no-one-on-the-team-has-acted)).
 1. **Reads the day's information:** meeting notes from the note-taker, email (inbox and sent), calendar, and today's task tracker updates.
 2. **Finds** requests, updates, decisions, and dates. Matches them to requests it already knows about. Suggests new ones.
 3. **Suggests a due date** for any request that does not have one.
@@ -176,7 +177,8 @@ During the test week, these two setup steps are the only new tasks, besides addi
 
 - **Time off on the calendar:** about 5 business days before, Claude drafts a cover plan. It lists open requests, where the documents and data are, who to contact in an emergency, and where each piece of work stands.
 - **Reminder steps** ([section 7](#7-reminders-and-escalation)).
-- **"No request sent" check:** every morning, in the owner's time zone ([When no one on the team has acted](#when-no-one-on-the-team-has-acted)).
+- **"No request sent" check:** at the start of each person's daily summary ([When no one on the team has acted](#when-no-one-on-the-team-has-acted)).
+- **The leader's daily run:** once a day, a scheduled run updates the leader's page and sends the leader one notice with everything waiting for approval and anything newly escalated.
 
 [↑ Back to contents](#contents)
 
@@ -195,7 +197,7 @@ During the test week, these two setup steps are the only new tasks, besides addi
 
 | When | What is true | What happens |
 |---|---|---|
-| The morning after the blocker is noted | No request sent yet | Claude reminds the owner and drafts the request, using the **email-draft** skill |
+| The next daily summary after the blocker is noted | No request sent yet | Claude reminds the owner and drafts the request, using the **email-draft** skill |
 | 3 days after the owner asks | Still blocked | Claude reminds the owner and drafts a follow-up |
 | 7 days after | Still blocked | Claude reminds the owner and drafts a follow-up. The request shows as yellow on the leader's page. |
 | 10 days after | Still blocked | The leader gets a **check-in** item: talk to the owner, and decide whether to step in |
@@ -211,11 +213,11 @@ The clock for these steps starts when the owner asks the other person to clear t
 
 | When | What is true | What happens |
 |---|---|---|
-| The morning after the blocker is noted | No request sent yet | Claude reminds the owner and drafts the request |
+| The next daily summary after the blocker is noted | No request sent yet | Claude reminds the owner and drafts the request |
 | 1 business day after the owner asks | Still blocked | Claude reminds the owner and drafts a follow-up |
 | 3 business days after the owner asks | Still blocked | The leader gets an **escalate** item automatically, with the full history and the owner's latest note |
 
-If no one on the team has acted on a High request, the owner gets 3 business days from the morning reminder. Then the leader is told ([When no one on the team has acted](#when-no-one-on-the-team-has-acted)).
+If no one on the team has acted on a High request, the owner gets 3 business days from the reminder in their daily summary. Then the leader is told ([When no one on the team has acted](#when-no-one-on-the-team-has-acted)).
 
 - **Who sets High:** the owner, based on what matters most to the client. The leader can change it. It is set when the request is first found, or in the weekly review.
 - **Changing the times:** each team can change the 1-day and 3-day steps in its settings (for example, 2 days and 5 days).
@@ -230,7 +232,7 @@ If no one on the team has acted on a High request, the owner gets 3 business day
 
 This covers two cases: a request with no team action after half its due time has passed, or a blocker where no one ever asked the other person to clear it.
 
-1. **Check the next morning.** When a team works in different time zones, "end of day" is different for each person. Each morning, in the owner's time zone, Claude checks whether a request was sent the day before. If not, Claude reminds the owner then. If someone needs to be asked, the email is already drafted. **The clock starts at that reminder.**
+1. **Check at the next daily summary.** When a person starts their daily summary, Claude first checks whether a request was sent to clear each blocker from before. If not, Claude reminds the owner right then. If someone needs to be asked, the email is already drafted. **The clock starts at that reminder.**
 2. The owner has **3 business days** from the reminder to act.
 3. After that:
    - **High priority:** the leader is **told**.
@@ -325,6 +327,7 @@ A Gantt chart is only as good as its dates. This design fixes that: Claude sugge
 
 - **email-draft** (already built): all drafted emails.
 - **my-writing-style** (one for each person): how each person writes.
+- **daily-summary** (built): the daily run. The person starts it, walks away, and comes back to a draft summary with only the missing questions. They answer, say "good," and Claude posts it. It also sets up the optional 5 pm reminder.
 - **meeting-notes-capture** (built): for any meeting with no note-taker. The person pastes rough notes. Claude pulls out requests, decisions, dates, and blockers, and the person approves them. It pairs with a **10-minute calendar block** after those meetings, which the skill can suggest adding. It is also useful on its own.
 
 [↑ Back to contents](#contents)
@@ -348,7 +351,7 @@ The tool is the same for every team. Anything specific to one team goes in a sep
 - **Everyone uses the task tracker the same way on every project.** Blocked, due dates, and labels mean the same thing everywhere. If not, the leader's page only works for some projects.
 - **Connections** to the task tracker, team wiki, email, calendar, and AI note-taker, for each person. The tool's first run guides each person through these. **SETUP.md** in the skill folder is the written backup. It lists each connection, what it is used for, and links to each tool's own official instructions (not copied steps, which go out of date). Team details, such as which workspace or project to use, go in the team's settings, not in SETUP.md.
 - **Each client's data rules are checked** before any meeting notes from that client are stored. For in-house teams, this means checking company policy on recording meetings.
-- **A way to run it every day.** Either a scheduled task for each person, or the person starts it each day. To be decided during the test.
+- **A way to run it every day:** each person starts the **daily-summary** skill at the end of their day, with an optional reminder around 5 pm local time. The leader's page and approval notice update in one scheduled run a day.
 
 [↑ Back to contents](#contents)
 
@@ -360,6 +363,7 @@ Estimates are in days of work. They are based on a similar tracker already built
 |---|---|
 | This design, checked and reviewed by owner | 3–4 days |
 | meeting-notes-capture skill | 1 hour (done: built 2026-09-29) |
+| daily-summary skill (the daily run, with the 5 pm reminder) | done: built 2026-09-29 |
 | team-radar version 1: daily run, request list, reminder steps, drafted emails | 2–3 days |
 | Guided first-run setup and SETUP.md | ½ day |
 | Test on the designer's own data | 1 day |
