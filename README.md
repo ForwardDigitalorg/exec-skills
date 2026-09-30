@@ -1,6 +1,6 @@
 # Exec Skills
 
-A collection of Claude Skills for executive project management and communication. Right now it has two email skills, one for drafting new emails and one for reviewing drafts. More may be added later.
+A collection of Claude Skills for executive project management and communication. Right now it has two email skills (one for drafting new emails, one for reviewing drafts), a skill for capturing meetings, and the design for a team leadership tool. More may be added later.
 
 ## What's a skill?
 
@@ -14,8 +14,15 @@ Each skill lives in its own folder in this repo, and every skill's main file is 
 |---|---|---|
 | `email-draft/` | You need to draft a **new** email | Drafts it from scratch for you to review |
 | `email-review/` | You've **already written** a draft | Marks it up with suggestions, never rewrites it |
+| `meeting-notes-capture/` | A meeting had **no AI note-taker** | Turns your notes or transcript into a clear record of requests, decisions, dates, and next steps |
 
-Neither skill sends or publishes anything. You stay in control of what goes out.
+None of these skills sends, publishes, or saves anything without your approval. You stay in control of what goes out.
+
+**Designs in progress** (not working skills yet):
+
+| Folder | What it will be |
+|---|---|
+| `team-radar/` | A tool for leaders of delivery teams: tracks every request, spots late work and silence early, drafts follow-ups, and gives the leader one page of what needs them. See `DESIGN.md`. |
 
 ### email-draft/
 
@@ -31,14 +38,24 @@ Reviews any email draft, a new one or a reply, and marks it up with numbered sug
 
 It flags hedging language, jargon, unnecessary wordiness, a buried main point, and weak scannability. Every review ends with a clean version showing what the email would look like if every suggestion were accepted, so it's easy to see the whole picture, but that combined version always comes after the marked-up original, never in place of it.
 
-## The frameworks behind both skills
+### meeting-notes-capture/
 
-Both skills are built on two real frameworks, not a one-off style preference:
+Captures what mattered in a meeting that had no AI note-taker: a client's own video call, a phone call, or a hallway conversation. Share whatever you have: a transcript, rough notes, the call's chat, or a few sentences from memory. It shows you what it's listening for (who was there, requests, who is waiting on whom, next steps, dates, promises, decisions, changes, risks, anything for the leader, anything private). If you have nothing written down, that same list works as a guide for what to write.
+
+It pulls out the key points, asks only about what's missing or unclear, and shows you the record to approve, with what needs action first. Then it gives you two ready-to-paste versions: facts only for the ticket in your task tracker, and the full record, including private notes, for your team wiki. It never invents names, dates, or promises. Tip: block 10 minutes after meetings with no note-taker and use it while details are fresh.
+
+### team-radar/ (design)
+
+The design for a team leadership tool, for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses email-draft for follow-ups and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
+
+## The frameworks behind the email skills
+
+The email skills are built on two real frameworks, not a one-off style preference:
 
 - **Alignment and Attunement**, from Kelly's Executive Communications training (Margaret Keys' framework, which Kelly has taught for years). Alignment is about the message itself: right content, right room, right time, no buried surprises. Attunement is about the audience: bringing your own authority while genuinely meeting the reader where they are, not talking down to them and not going over their head either.
 - **PULSE's "Anatomy of an Action-Based Email"** (DoubleGemini, Prasanth Nair), an 8-step structure covering tone, specific recipients, an action-oriented subject line, an up-front "Launch" (the one thing the reader most needs to know, stated before the background, in italics), scannable formatting, and a sign-off matched to the situation.
 
-The specific instructions in both skills are applications of those two frameworks, drawn from the same training Kelly already gives on executive communication and email etiquette. Examples: deciding whether an email is an Action Ask or an Action Taken before writing the subject line, writing the Launch last but placing it first, when to keep versus change a subject line on a reply, and when a technical term should get its own clearly labeled line instead of being cut.
+The specific instructions in the email skills are applications of those two frameworks, drawn from the same training Kelly already gives on executive communication and email etiquette. Examples: deciding whether an email is an Action Ask or an Action Taken before writing the subject line, writing the Launch last but placing it first, when to keep versus change a subject line on a reply, and when a technical term should get its own clearly labeled line instead of being cut.
 
 ## Your writing voice
 
