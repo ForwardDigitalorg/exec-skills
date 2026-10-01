@@ -113,14 +113,20 @@ voice.
   draft the body, then write the one line that says what you need, then move
   it to the top. Clear and warm are not in tension. Write the ask the way the
   author would say it out loud to this person, not as an instruction manual.
-  For an Action Ask, open the Launch with "Thanks in advance for...":
-  *"Thanks in advance for reviewing the Q3 budget and signing off."*
+  For an Action Ask in a longer email, open the Launch with "Thanks in
+  advance for...": *"Thanks in advance for reviewing the Q3 budget and
+  signing off."* In a **short email** (one simple ask and a few short
+  sentences; a fill-in list for the reader doesn't make it long), state
+  the ask directly and leave "Thanks in advance" for the sign-off only:
+  *"Could you reply with a target date for each market below by 02-Oct?"*
+  Saying it twice in a few lines reads as padding.
 - **Body.** Scannable: bullets for lists and options, bold lead-ins where a
   skimming reader needs to find their part, one job per paragraph. Include
   dates, owners, and what's blocked. Link to relevant work, but only to
   things the recipient can actually open.
 - **Sign-off.** Matched to the context and the relationship. For an Action
-  Ask, close with "Thanks in advance," before the author's name.
+  Ask, close with "Thanks in advance," before the author's name, in short
+  and long emails alike.
 - **Timing.** If it matters (time zones, end of week, before a meeting),
   suggest when to send.
 
@@ -146,7 +152,7 @@ Then check both frameworks one last time:
 2. **To** and **Cc**, with a one-line reason for each cc.
 3. The full draft, from greeting through sign-off.
 4. After the signature, this line:
-   *Content drafted by AI for efficiency, quality checked by me.*
+   *Content drafted by AI for efficiency, quality-checked by me.*
    It's there for transparency. Include it by default; the author keeps or
    deletes it at their discretion.
 5. **Assumptions to check:** a short list of anything you inferred rather
