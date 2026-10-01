@@ -1,6 +1,6 @@
 # Exec Skills
 
-A collection of Claude Skills for executive project management and communication. Right now it has two email skills (one for drafting new emails, one for reviewing drafts), a skill for capturing meetings, a daily summary skill, and the design for a team leadership tool. More may be added later.
+A collection of Claude Skills for executive project management and communication. Right now it has two email skills (one for drafting new emails, one for reviewing drafts), a skill for capturing meetings, a morning focus skill, a daily summary skill, and the design for a team leadership tool. More may be added later.
 
 ## What's a skill?
 
@@ -15,6 +15,7 @@ Each skill lives in its own folder in this repo, and every skill's main file is 
 | `email-draft/` | You need to draft a **new** email | Drafts it from scratch for you to review |
 | `email-review/` | You've **already written** a draft | Marks it up with suggestions, never rewrites it |
 | `meeting-notes-capture/` | A meeting had **no AI note-taker** | Turns your notes or transcript into a clear record of requests, decisions, dates, and next steps |
+| `my-day/` | It's the **start of your workday** | Emails you a short list of what needs you today, and adds small reminders to your calendar |
 | `daily-summary/` | It's the **end of your workday** | Drafts your daily update from today's meetings, email, calendar, and task tracker, and asks only what's missing |
 
 None of these skills sends, publishes, or saves anything without your approval. You stay in control of what goes out.
@@ -31,7 +32,7 @@ Drafts new emails from scratch. It will not send or publish anything. It uses ex
 
 It starts by asking why you're sending the email, since that shapes both the subject line and the opening ask. It pulls facts from anything you upload (a meeting transcript, JIRA tickets, a prior thread) and asks only for what's still missing: who it's to, the outcome you want, any deadlines, and who to cc. It matches your voice using your my-writing-style profile, or offers to build one from a few of your own emails (see "Your writing voice" below).
 
-After your signature, it adds a closing line: *"Content drafted by AI for efficiency, quality checked by me."* This is there for full transparency. Keep or discard it at your discretion.
+After your signature, it adds a closing line: *"Content drafted by AI for efficiency, quality-checked by me."* This is there for full transparency. Keep or discard it at your discretion.
 
 ### email-review/
 
@@ -45,6 +46,14 @@ Captures what mattered in a meeting that had no AI note-taker: a client's own vi
 
 It pulls out the key points, asks only about what's missing or unclear, and shows you the record to approve, with what needs action first. Then it gives you two ready-to-paste versions: facts only for the ticket in your task tracker, and the full record, including private notes, for your team wiki. It never invents names, dates, or promises. Tip: block 10 minutes after meetings with no note-taker and use it while details are fresh.
 
+### my-day/
+
+Your morning focus. At the start of each workday, Claude reads your email, calendar, task tracker, and the team's request tracker, and emails you a short list of what needs you today: blockers you can clear (with a draft ready), work due today, this week, or late, and decisions, actions, and replies you owe. It also lists today's meetings and who you're waiting on. The list is as long as the day really is: some days 2 items, some days 11 or more, never padded.
+
+Reply by number ("1 done," "2 waiting on Khalid," "3 remind me Oct 5") and tomorrow's list updates. It also adds small private reminders to your own calendar: capture notes after meetings, run your daily summary before the end of the day, and, if you want them, adds breaks. It sends nothing except the email to you.
+
+Each team keeps a short settings page in its own workspace (its names for things, time zones, workday hours, and choices like copying the leader on escalation drafts), so the skill works the same for any team.
+
 ### daily-summary/
 
 Writes your end-of-day update for you, from what actually happened today. Start it by saying "run my daily summary," then walk away for a few minutes. Claude reads today's meeting notes, email (inbox and sent), calendar, and task tracker. It starts with yesterday's open blockers: if no one has asked for what you're waiting on, it tells you and drafts the request.
@@ -55,7 +64,7 @@ On the first run, it checks your connections and offers a workday reminder aroun
 
 ### team-radar/ (design)
 
-The design for a team leadership tool, for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses daily-summary for the daily run, email-draft for follow-ups, and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
+The design for a team leadership tool for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses my-day for each person's morning focus, daily-summary for the daily run, email-draft for follow-ups, and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
 
 ## The frameworks behind the email skills
 
