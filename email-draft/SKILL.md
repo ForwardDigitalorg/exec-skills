@@ -1,6 +1,6 @@
 ---
-name: email-draft
-description: Draft a brand-new email from scratch using PULSE's "Anatomy of an Action-Based Email" and Margaret Keys' Alignment and Attunement framework. Starts by asking why the email is being sent, pulls facts from any context the author uploads (meeting transcripts, JIRA tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's own voice from their my-writing-style profile (or builds one from writing samples), and returns a ready-to-send draft with an action subject line and an italicized Launch. Use whenever someone asks to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft the author already wrote, use email-review instead.
+name: "email-draft"
+description: "Draft a brand-new email from scratch using PULSE's \"Anatomy of an Action-Based Email\" and Margaret Keys' Alignment and Attunement framework. Starts by asking why the email is being sent, pulls facts from any context the author uploads (meeting transcripts, JIRA tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's own voice from their my-writing-style profile (or builds one from writing samples), and returns a ready-to-send draft with an action subject line and an italicized Launch. Use whenever someone asks to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft the author already wrote, use email-review instead."
 ---
 
 # Email Draft
@@ -17,6 +17,20 @@ emails someone has already written. Both use the same two frameworks:
   Nair): tone, specific recipients, an action subject, a friendly greeting,
   an up-front action (the **Launch**), scannable content, a sign-off matched
   to context, and a timely send.
+
+## Hard rule: the Oxford comma, every time
+
+Every series of three or more items gets a comma before the final "and,"
+"or," or "&." No exceptions, in any part of the email: subject line,
+Launch, body prose, bullets, sign-off area, and the subject line options.
+
+- Right: "the venue, the catering, and the AV quote"
+- Wrong: "the venue, the catering and the AV quote"
+
+This rule beats the author's voice profile and writing samples. If their
+samples skip the comma, match everything else about their voice but still
+add it. The misses almost always happen inside ordinary sentences, not in
+bulleted lists, so the final check in Step 4 is mandatory.
 
 ## Step 1: Ask for the goal first
 
@@ -139,6 +153,14 @@ paragraphs, and any standing point at risk of getting lost. The review
 skill's no-silent-rewrite rule protects the author's words, not yours, so
 fix your own draft directly.
 
+**Oxford comma pass (mandatory, do it last).** After every other fix, go
+through the finished draft sentence by sentence, including the subject
+line options. Find every "and," "or," and "&." For each one, check
+whether it closes a series of three or more items (words, phrases, or
+clauses). If it does and there's no comma right before it, add one. Then
+do the same pass again for any text you changed while fixing. Don't
+present the draft until this pass finds nothing.
+
 Then check both frameworks one last time:
 
 - **Alignment:** is anything in here a surprise the reader shouldn't get by
@@ -169,5 +191,6 @@ Then check both frameworks one last time:
 - **Use filler openers.** No "Hope this finds you well" or "Just following
   up." A follow-up states what's new: the date of the original ask and what
   the delay now affects.
+- **Skip the Oxford comma.** See the hard rule at the top.
 - **Pad it.** If it's running past about 200 words, check whether it's
   really two emails.
