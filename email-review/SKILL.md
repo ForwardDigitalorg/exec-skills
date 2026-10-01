@@ -1,6 +1,6 @@
 ---
-name: email-review
-description: Review any email draft, a new one or a reply, using the Alignment/Attunement framework and PULSE's Action-Based Email structure. Marks up the original email with numbered suggestions (like the old "Just Not Sorry" plugin that flagged self-undermining language), explains the reasoning behind each one, and ends with a clean combined version showing all suggestions applied together. Never silently rewrites the email, the original is always shown first and the author decides what to accept. Use this whenever someone shares an email draft or thread and asks for feedback, wants a second pair of eyes before sending, asks to check for jargon, wordiness, or weak language, or asks you to draft a reply to an email they received. Applies to any email, not just a specific topic or client.
+name: "email-review"
+description: "Review any email draft, a new one or a reply, using the Alignment/Attunement framework and PULSE's Action-Based Email structure. Marks up the original email with numbered suggestions (like the old \"Just Not Sorry\" plugin that flagged self-undermining language), explains the reasoning behind each one, and ends with a clean combined version showing all suggestions applied together. Never silently rewrites the email, the original is always shown first and the author decides what to accept. Use this whenever someone shares an email draft or thread and asks for feedback, wants a second pair of eyes before sending, asks to check for jargon, wordiness, or weak language, or asks you to draft a reply to an email they received. Applies to any email, not just a specific topic or client."
 ---
 
 # Email Review
@@ -121,6 +121,16 @@ reassurance the reader needs so the rest of the email doesn't read as more
 negative or uncertain than intended. Flag it as worth protecting rather
 than cutting.
 
+**Missing Oxford comma (always check, every review).** Every series of
+three or more items needs a comma before the final "and," "or," or "&":
+"the deck, the budget, and the timeline," not "the deck, the budget and
+the timeline." Go through the original sentence by sentence (subject line
+included), find every "and," "or," and "&," and check whether it closes a
+series of three or more. Most misses hide in ordinary sentences, not
+bulleted lists. Mark every miss inline. If there are several, group them
+under one numbered suggestion that quotes each phrase with its fix, so they
+don't crowd out the bigger points.
+
 ## For a brand new email specifically
 
 If this is a new email rather than a reply, propose 2-3 concrete subject
@@ -153,12 +163,16 @@ Launch should read that way.
    example: "I just [1] wanted to follow up on this."
 2. **List the suggestions below, one per number.** For each: quote the
    flagged text, name the category (hedging language, jargon, wordiness,
-   buried Launch, subject line, scannability, standing point), explain why
+   buried Launch, subject line, scannability, standing point, Oxford
+   comma), explain why
    it's worth a second look, and give a specific suggested alternative, not
    just "consider rephrasing."
 3. **State plainly that these are suggestions only,** nothing has been
    changed, and the author decides what to keep.
-4. **Always close with the full alternate version.** Under a clear heading
+4. **Always close with the full alternate version.** Before showing it,
+   run the same Oxford comma pass on it, including any wording you
+   suggested, since new sentences are where new misses creep in.
+   Under a clear heading
    like "If you accepted every suggestion above," show what the email would
    look like with all of them applied together, clean and complete, subject
    line through sign-off, with no bracketed numbers or explanations mixed
