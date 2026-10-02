@@ -1,6 +1,6 @@
 ---
 name: daily-summary
-description: End-of-day summary for a team member. The person starts it ("run my daily summary") and can walk away while Claude reads the day's meeting notes, email (inbox and sent), calendar, and task tracker, checks yesterday's open blockers, and drafts a summary with only the missing questions at the top. The person answers, says "good," and Claude posts the approved summary. Also offers a daily reminder around 5 pm local time to start it. Use when someone asks for their daily summary, end-of-day update, or status update, or to set up the daily reminder. Part of team-radar, and useful on its own.
+description: End-of-day summary for a team member. The person starts it ("run my daily summary") and can walk away while Claude reads the day's meeting notes, email (inbox and sent), calendar, and task tracker, checks yesterday's open blockers, and drafts a summary with only the missing questions at the top. The person answers until they're happy with the results, says "good," and Claude posts the approved summary. Also offers an OPTIONAL end-of-day daily reminder that starts at whatever time the user sets as their "end of day" local time. Use when someone asks for their daily summary, end-of-day update, or status update, or to set up the daily reminder. Part of team-radar, and useful on its own.
 ---
 
 # Daily Summary
@@ -26,28 +26,16 @@ On the first run, check what is needed and ask only for what is missing:
    location), where private notes go, and any team rules. If there is no
    such page, ask the person where to post their summary.
 3. **Time zone:** take it from the person's calendar settings. Confirm it.
-4. **Offer the daily reminder:** "Would you like a reminder to run this each
-   workday, around 5 pm your time?" If yes, create a scheduled task, using
+4. **Offer the *optional* daily reminder:** "Would you like a reminder to run this each
+   workday, around the end of your workday?" If yes, ask,
+   "What time would you like that reminder?" Then, create a scheduled task, using
    this Claude environment's scheduling feature, with a push notification,
-   on weekdays at about 4:55 pm in their time zone. The reminder only says:
+   on weekdays at the requested time in their time zone. The reminder only says:
    "Time for your daily summary. Open Claude and say: run my daily
    summary." It does not run the summary itself. If scheduling is not
    available, suggest a repeating calendar reminder instead.
 
-## Step 1: Start with yesterday's open items
-
-Read the person's last few approved summaries at the team-agreed location.
-For every open blocker, check the person's **sent email**:
-
-- **If no request was sent** to clear the blocker, put it at the very top:
-  "You noted on [date] that you need [thing] from [person]. I don't see a
-  request. Here is a draft." Draft it with the **email-draft** skill.
-- **If a request was sent** but there is no answer, note how many days it
-  has been waiting.
-
-Never say a request was not sent without checking sent email first.
-
-## Step 2: Read today's information
+## Step 1: Read today's information
 
 Tell the person: "This takes a few minutes. You can step away. I'll have a
 draft and a few questions when you come back."
@@ -64,9 +52,38 @@ Then read, for today only:
 
 Never read direct messages or anyone else's email.
 
+## Step 2: Check yesterday's open items
+
+Read the person's last few approved summaries at the team-agreed location.
+For every open blocker, check **every place a request or an answer could
+be**, back to the day the blocker was noted:
+
+- the person's **sent email**
+- the **task tracker** (the ticket's status and comments)
+- if connected, the **team wiki** (for example Confluence, Notion, or an
+  internal wiki)
+- if connected, **team chat channels** (for example Slack or Teams).
+  Channels only, never direct messages.
+
+Then:
+
+- **If no request was sent** in any of them, put it at the very top:
+  "You noted on [date] that you need [thing] from [person]. I don't see a
+  request in [places checked]. Here is a draft." Draft it with the
+  **email-draft** skill.
+- **If a request was sent** but there is no answer, note where it was
+  sent and how many days it has been waiting.
+- **If the blocker is cleared** in any of them, mark it cleared, with a
+  link to the proof.
+
+Never say a request was not sent without checking every connected place
+first. Name any place that could not be checked. If it may have been
+handled in a direct message or on a call, which Claude can't see, ask.
+Don't assume.
+
 ## Step 3: Draft the summary
 
-Match what you found to the open items from Step 1. Suggest a due date for
+Match what you found to the open items from Step 2. Suggest a due date for
 any request that does not have one, and mark it "suggested."
 
 Use this order: what needs action first, what is settled last. Leave out
@@ -124,5 +141,6 @@ what would be posted, but do not post or change anything.
 - **Plain English.** The person may speak English as a second language, be
   new to the team, or be new to a tool. Short sentences, common words, no
   idioms or jargon.
-- **Check before saying something.** Check sent email before saying a
+- **Check before saying something.** Check every connected place (sent
+  email, task tracker, team wiki, team chat channels) before saying a
   request was not sent.
