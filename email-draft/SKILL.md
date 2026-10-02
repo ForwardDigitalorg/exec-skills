@@ -1,22 +1,22 @@
 ---
 name: "email-draft"
-description: "Draft a brand-new email from scratch using PULSE's \"Anatomy of an Action-Based Email\" and Margaret Keys' Alignment and Attunement framework. Starts by asking why the email is being sent, pulls facts from any context the author uploads (meeting transcripts, JIRA tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's own voice from their my-writing-style profile (or builds one from writing samples), and returns a ready-to-send draft with an action subject line and an italicized Launch. Use whenever someone asks to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft the author already wrote, use email-review instead."
+description: "Draft a brand-new email from scratch using Executive Communication right practices. Starts by asking why the email is being sent (if author can't answer this - ask them questions to get there), pulls facts from any context author shares (meeting transcripts, JIRA tickets, email threads, docs), asks only for what's still missing (recipient, desired outcome, deadline, cc's), matches the author's voice from their my-writing-style profile (or builds one from writing samples) - authenticity matters!, and returns a ready-to-send draft with an action subject line and an italicized action as the first sentence. Use whenever author need to write, draft, or compose a new email, or to turn notes, a transcript, or a ticket into an email. To review a draft author already wrote, use email-review instead."
 ---
 
 # Email Draft
 
-This skill drafts new emails. Its sister skill, **email-review**, marks up
-emails someone has already written. Both use the same two frameworks:
+Drafts new emails. I know, I know. who could have figured that out.
+Its sister skill, **email-review**, marks up emails someone has already written. 
+Both are based on my background in Communication theory.
 
-- **Alignment and Attunement** (Margaret Keys, Executive Communications).
+- **Alignment and Attunement**.
   Alignment is the message: right content, right room, right time, no buried
   surprises. Attunement is the reader: the writer brings their own authority
   while meeting the reader where they are, without talking down to them or
   going over their head.
-- **PULSE's "Anatomy of an Action-Based Email"** (DoubleGemini, Prasanth
-  Nair): tone, specific recipients, an action subject, a friendly greeting,
-  an up-front action (the **Launch**), scannable content, a sign-off matched
-  to context, and a timely send.
+- **"Anatomy of an Action-Based Email"**.
+  Tone, specific recipients, an action subject, a friendly greeting, *an up-front action*,
+  scannable content, a sign-off matched to context, and a timely send.
 
 ## Hard rule: the Oxford comma, every time
 
@@ -30,7 +30,7 @@ Launch, body prose, bullets, sign-off area, and the subject line options.
 This rule beats the author's voice profile and writing samples. If their
 samples skip the comma, match everything else about their voice but still
 add it. The misses almost always happen inside ordinary sentences, not in
-bulleted lists, so the final check in Step 4 is mandatory.
+bulleted lists, so the final check in Step 4 is mandatory. (Sorry, y'all. I'm a stickler.)
 
 ## Step 1: Ask for the goal first
 
@@ -38,7 +38,7 @@ Before anything else, ask: **"Why are you sending this email? What do you
 need to happen after they read it?"**
 
 This is the most important question in the skill. The answer becomes both
-the subject line and the Launch, so nothing else can be written well until
+the subject line and the action sentence, so nothing else can be written well until
 it's clear. If the author's answer is vague ("just to update them"), help
 them sharpen it: "If they read only one sentence, what should it be?"
 
@@ -97,20 +97,20 @@ voice.
 ## Step 3: Draft using the PULSE structure
 
 - **Subject line.** Action-oriented, so the reader knows what's needed before
-  opening. Action Ask: `Request: [topic]`, `Decision Needed: [topic]`,
+  opening. Action Ask: `Request: [topic]`, `Decision Needed: [topic]',
   `Feedback Requested: [topic]`. Action Taken: `Update: [topic]`,
   `FYI: [topic]`.
 - **Asks with a deadline.** If an Action Ask has a deadline, end the subject
-  with the date, in DD-MMM format, and name the same date in the Launch,
+  with the date, in DD-MMM format, and name the same date in the first sentence,
   framed as thanks rather than pressure. Use the identical date in both
   places.
   - **Deadline less than 5 business days away:** also start the subject
     with URGENT. `URGENT request: sign-off on Q3 budget - deadline 05-Oct`.
-    Launch: *"Thanks in advance for reviewing and signing by 05-Oct. Let
+    first sentence: *"Thanks in advance for reviewing and signing by 05-Oct. Let
     me know if you have any questions!"*
   - **Deadline 5 or more business days away:** no URGENT.
     `Request: sign-off on Q3 budget - deadline 30-Oct`. Same style of
-    Launch, with the date.
+    first sentence, with the date.
   - **Counting business days.** Count from today's date, or from the send
     date if the author gives one. If you don't know today's date, ask.
     Skip weekends. Count holidays only if the author mentions them.
@@ -122,12 +122,12 @@ voice.
   - URGENT only means something if it's rare, so don't add it for any
     other reason.
 - **Greeting.** Friendly and matched to the relationship.
-- **The Launch.** The single most important sentence, first, in its own
+- **The First Sentence.** The single most important sentence, first, in its own
   sentence or short paragraph, in *italics*. Write it last, place it first:
   draft the body, then write the one line that says what you need, then move
   it to the top. Clear and warm are not in tension. Write the ask the way the
   author would say it out loud to this person, not as an instruction manual.
-  For an Action Ask in a longer email, open the Launch with "Thanks in
+  For an Action Ask in a longer email, open the first sentence with "Thanks in
   advance for...": *"Thanks in advance for reviewing the Q3 budget and
   signing off."* In a **short email** (one simple ask and a few short
   sentences; a fill-in list for the reader doesn't make it long), state
