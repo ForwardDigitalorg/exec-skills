@@ -50,7 +50,7 @@ It pulls out the key points, asks only about what's missing or unclear, and show
 
 Your morning focus. At the start of each workday, Claude reads your email, calendar, task tracker, and the team's request tracker, and emails you a short list of what needs you today: blockers you can clear (with a draft ready), work due today, this week, or late, and decisions, actions, and replies you owe. It also lists today's meetings and who you're waiting on. The list is as long as the day really is: some days 2 items, some days 11 or more, never padded.
 
-Reply by number ("1 done," "2 waiting on Khalid," "3 remind me Oct 5") and tomorrow's list updates. It also adds small private reminders to your own calendar: capture notes after meetings, run your daily summary before the end of the day, and, if you want them, adds breaks. It sends nothing except the email to you.
+Reply by number ("1 done," "2 waiting on Khalid," "3 remind me Oct 5") and tomorrow's list updates. It also adds small private reminders to your own calendar: capture notes after meetings, run your daily summary before the end of the day, and, if you want them, breaks. It sends nothing except the email to you.
 
 Each team keeps a short settings page in its own workspace (its names for things, time zones, workday hours, and choices like copying the leader on escalation drafts), so the skill works the same for any team.
 
@@ -64,7 +64,7 @@ On the first run, it checks your connections and offers a workday reminder aroun
 
 ### team-radar/ (design)
 
-The design for a team leadership tool for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses my-day for each person's morning focus, daily-summary for the daily run, email-draft for follow-ups, and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
+The design for a team leadership tool, for agencies, consulting firms, and in-house delivery teams. It tracks every request from the day it's made, sends reminders and escalates to the leader on a schedule, replaces manual status updates with a short daily summary each person approves, and gives the leader one page, with Gantt timelines, showing only what needs them. It uses my-day for each person's morning focus, daily-summary for the daily run, email-draft for follow-ups, and meeting-notes-capture for meetings with no note-taker. Read `team-radar/DESIGN.md` for the full design.
 
 ## The frameworks behind the email skills
 
